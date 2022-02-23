@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Home</title>
+</head>
+  <body>
+    <h1>Hello</h1>
+
+    {{ range .Downloadables }}
+    <a href="{{ .Path }}" download>{{ .Name }}</a>
+    {{ end }}
+  </body>
+</html>
